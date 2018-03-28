@@ -12,7 +12,7 @@ class SendMOTD extends PluginTask{
         $this->line = -1;
     }
     
-    public function onRun($tick){
+    public function onRun(int $tick){
         if ($this->getPlugin()->getMainConfig()->get("MOTD Shuffle") == "on"){
             //Shuffle is on
             $getMOTD = $this->getPlugin()->getMainConfig()->get("MOTD Message");
